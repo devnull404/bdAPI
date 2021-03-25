@@ -53,3 +53,8 @@ app.use("/donors", donors);
 
 // Middleware for manage routes made on /receibers.
 app.use("/needers", needers);
+
+// 404 page
+app.use((req, res) => {
+    res.send("<head><link rel='stylesheet' src='/css/main.css'></link></head><main><article><h1>Mmmm... not found what you were looking for.</h1><img src='https://eslbrains.com/wp-content/uploads/2020/02/confused-words.png'></img></article></main>")
+});
