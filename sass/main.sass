@@ -1,0 +1,88 @@
+@import variables
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    text-decoration: none
+    //border: 1px solid magenta
+    //margin: 2px
+    font-family: "sans-serif"
+
+body
+    background-color: $general-bg
+
+a
+    //color: black
+    font-size: 25px
+    transition: all 0.6s ease
+    color: $header-words
+a:hover
+    font-size: 30px
+    color: $header-words-hover
+
+header
+    min-height: 5vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: $header-bg
+    width: 100vw
+    nav
+        min-width: 75vw
+        display: flex
+        flex-wrap: wrap
+        flex-direction: row
+        justify-content: space-around
+        @media (max-width: 800px)
+            flex-direction: column
+            align-items: flex-start
+            min-width: 90vw
+            a
+                padding: 7px
+div.separator-1
+    height: 5px
+    width: 100vw
+    background-color: $decorator1-bg
+div.separator-2
+    height: 5px
+    width: 100vw
+    background-color: $decorator2-bg
+
+div.donorsList
+    width: 100%
+    div.info
+        padding: 15px 0 10px 40px
+        margin: 10px auto
+        background-color: white
+        border-radius: 20px
+        width: 100%
+
+main
+    display: flex-box
+    justify-content: flex-start
+    flex-direction: column
+    width: 60vw
+    margin: 0 auto
+    article
+        margin: 0 auto
+        max-width: 40vw
+        font-size: 20px
+        padding: 20px 0 0 20px
+        form
+            background-color: white
+            padding: 10px 0 10px 10px
+            border-radius: 10px
+            div
+                input.form-input
+                    width: 70%
+                    padding: 10px 10px 10px 5px
+                    margin: 0 0 10px 0
+                    border-radius: 5px
+                    border: none
+                    background-color: whitesmoke
+            input.form-submit
+                padding: 6px 30px 6px 30px
+                border: none
+                border-radius: 5px

@@ -1,0 +1,19 @@
+{
+  "name": "blood-donation-api",
+  "version": "1.0.0",
+  "description": "API for donating blood purposes",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bloodAPI"
+  ],
+  "author": "Francisco Mendoza Ruiz",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.1",
+    "pug": "^3.0.2"
+  }
+}

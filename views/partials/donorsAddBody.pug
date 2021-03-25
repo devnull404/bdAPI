@@ -1,0 +1,11 @@
+main
+    article
+        h1 Formulario
+        form(method="post")
+            each val in [["Name", "name"], ["Lastname", "lastname"], ["CURP", "curp"], ["Medical Certificate", "mCertificate"], ["Age", "age"], ["e-mail", "email"], ["Blood Type", "bloodType"], ["Status", "status"]]
+                div
+                    h5= val[0]
+                    input(class="form-input", id=val[1], type="text", name=val[1], placeholder=val[1])
+                br
+
+            input(class="form-submit", type="submit", value="send")
