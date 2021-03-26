@@ -8,6 +8,8 @@ router
     .post("/add", donorsController.donorsAddPost)
     .get("/add", donorsController.donorsAdd)
     .put("/edit", donorsController.donorsPut)
-    .delete("/remove", donorsController.donorsDelete);
+    .delete("/remove", donorsController.donorsDelete)
+    .get("/search", donorsController.donorsSearch)
+    .post("/search", donorsController.donorsSearchPost)
 
 module.exports = router;

@@ -28,7 +28,7 @@ app.set('view engine', 'pug');
 
 // Start to listen with out application.
 app.listen(port, () => {
-    console.log(`Server runing on port: ${port} `);
+    console.log(`Server runing on port: ${port}.`);
 });
 
 // Using static method to manage public files like .css, .js, etc.

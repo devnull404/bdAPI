@@ -57,7 +57,22 @@ const donorsDelete = (req, res) => {
 // Middleware cotroller for GET request method over /donors/ retrieving a index or  main page for that section.
 const donorsIndex = (req, res) => {
     res.render("donors", {title: "Donors", message: "Hi there, guys!"});
-}
+};
+
+const donorsSearch = (req, res) => {
+    res.render("donorsSearch");
+};
+
+const donorsSearchPost = (req, res) => {
+    console.log(req.body);
+    Donor.find({curp: req.body.searchParam})
+        .then((result) => {
+            res.render("results", {results: result});
+        })
+        .catch((err) => {
+            console.log(err);
+        });
+};
 
 // Exporting all controllers in order to being used away.
 module.exports = {
@@ -66,5 +81,7 @@ module.exports = {
     donorsAdd,
     donorsPut,
     donorsDelete,
-    donorsIndex
+    donorsIndex,
+    donorsSearch,
+    donorsSearchPost
 };

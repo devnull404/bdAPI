@@ -6,5 +6,6 @@ router
     .get("/", needersController.needersIndex)
     .get("/add", needersController.needersAdd)
     .post("/add", needersController.needersAddPost)
+    .get("/search", needersController.needersSearch)
 
 module.exports = router;
