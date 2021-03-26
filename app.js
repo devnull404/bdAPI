@@ -7,7 +7,7 @@ const needers = require("./routes/needersRouter");
 
 // Configuring listening port and dbURI parameters credentials.
 const port = 8080;
-const dbURI = "mongodb+srv://bedu:F813BD3EED@cluster0.spxuk.mongodb.net/main?retryWrites=true&w=majority";
+const dbURI = "";
 const app = express();
 
 // Connecting to Mongodb Atlas using Mongoose through asynch fnc, that's the why of te .then and .catch.

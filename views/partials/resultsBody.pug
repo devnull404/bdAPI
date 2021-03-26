@@ -1,12 +1,17 @@
-h1 Results
-div.donorsList
-    div.info
-        each result in results
-            h1= result.name
-            h3= result.lastname
-            br
-            ul
-                li= result.lastname
-                li= result.curp
-                li= result.mCertificate
-                li= result._id
+main
+    article
+        h1 Results
+        div.donorsList
+            div.info
+                each result in results
+                    h1= result.name
+                    h3= result.lastname
+                    br
+                    ul
+                        li= result.email
+                        li= result.age
+                        li= result.bloodType
+                        li= result.lastname
+                        li= result.curp
+                        li= result.mCertificate
+                        li= result.gender
